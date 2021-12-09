@@ -12,15 +12,15 @@ amazon_logo = driver.find_element(By.CSS_SELECTOR, "a.a-link-nav-icon i.a-icon.a
 
 driver.find_element(By.CSS_SELECTOR, "div.a-box-inner h1.a-spacing-small")
 
-driver.find_element(By.CSS_SELECTOR, "#ap_customer_name").send_keys("Will Robinson",Keys.ENTER)
+driver.find_element(By.CSS_SELECTOR, "#ap_customer_name")#.send_keys("Will Robinson",Keys.ENTER)
 
-driver.find_element(By.CSS_SELECTOR, "#ap_email").send_keys("WillRobinson@netflix.com",Keys.ENTER)
+driver.find_element(By.CSS_SELECTOR, "#ap_email")#.send_keys("WillRobinson@netflix.com",Keys.ENTER)
 
-driver.find_element(By.CSS_SELECTOR, "#ap_password").send_keys("S3cr3t",Keys.ENTER)
+driver.find_element(By.CSS_SELECTOR, "#ap_password")#.send_keys("S3cr3t",Keys.ENTER)
 
-driver.find_element(By.CSS_SELECTOR, "#ap_password_check").send_keys("S3cr3t",Keys.ENTER)
+driver.find_element(By.CSS_SELECTOR, "#ap_password_check")#.send_keys("S3cr3t",Keys.ENTER)
 
-driver.find_element(By.CSS_SELECTOR, "#auth-continue-announce")
+driver.find_element(By.CSS_SELECTOR, "#continue")
 
 driver.find_element(By.CSS_SELECTOR, "a[href*='ap_register_notification_condition_of_use']")
 
@@ -38,6 +38,6 @@ driver.find_element(By.CSS_SELECTOR, "div.a-row a[href*='/ap/signin?openid.pape.
 sleep(4)
 
 print('Test Passed')
-print(customer_sign_in)
+#print(customer_sign_in)
 driver.quit()
 
